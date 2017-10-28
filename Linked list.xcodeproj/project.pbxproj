@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0C8AB51FA4AA2200DA333F /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0C8AB41FA4AA2200DA333F /* Stack.m */; };
+		9A0C8AB81FA4B32700DA333F /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0C8AB71FA4B32700DA333F /* Queue.m */; };
 		9AFCDF8C1F9B91AC004EB831 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCDF8B1F9B91AC004EB831 /* AppDelegate.m */; };
 		9AFCDF9A1F9B91AC004EB831 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCDF991F9B91AC004EB831 /* main.m */; };
 		9AFCDFA71F9B93DA004EB831 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCDFA61F9B93DA004EB831 /* LinkedList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A0C8AB31FA4AA2200DA333F /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		9A0C8AB41FA4AA2200DA333F /* Stack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		9A0C8AB61FA4B32700DA333F /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		9A0C8AB71FA4B32700DA333F /* Queue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
 		9AFCDF871F9B91AC004EB831 /* Linked list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linked list.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFCDF8A1F9B91AC004EB831 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AFCDF8B1F9B91AC004EB831 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +64,10 @@
 				9AFCDF991F9B91AC004EB831 /* main.m */,
 				9AFCDFA51F9B93DA004EB831 /* LinkedList.h */,
 				9AFCDFA61F9B93DA004EB831 /* LinkedList.m */,
+				9A0C8AB31FA4AA2200DA333F /* Stack.h */,
+				9A0C8AB41FA4AA2200DA333F /* Stack.m */,
+				9A0C8AB61FA4B32700DA333F /* Queue.h */,
+				9A0C8AB71FA4B32700DA333F /* Queue.m */,
 			);
 			path = "Linked list";
 			sourceTree = "<group>";
@@ -93,6 +103,7 @@
 				TargetAttributes = {
 					9AFCDF861F9B91AC004EB831 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A0C8AB81FA4B32700DA333F /* Queue.m in Sources */,
+				9A0C8AB51FA4AA2200DA333F /* Stack.m in Sources */,
 				9AFCDFA71F9B93DA004EB831 /* LinkedList.m in Sources */,
 				9AFCDF9A1F9B91AC004EB831 /* main.m in Sources */,
 				9AFCDF8C1F9B91AC004EB831 /* AppDelegate.m in Sources */,
@@ -246,6 +259,7 @@
 		9AFCDF9E1F9B91AC004EB831 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 448W4YMN9D;
 				INFOPLIST_FILE = "Linked list/Info.plist";
@@ -253,6 +267,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "researchAndDevelopment.Linked-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -260,6 +276,7 @@
 		9AFCDF9F1F9B91AC004EB831 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 448W4YMN9D;
 				INFOPLIST_FILE = "Linked list/Info.plist";
@@ -267,6 +284,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "researchAndDevelopment.Linked-list";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

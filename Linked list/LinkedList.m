@@ -140,6 +140,9 @@ return NO; \
 
 - (LinkedListNode *)nodeAtIndex:(NSInteger)index
 {
+    if (index >= self.count) {
+        return nil;
+    }
     LinkedListNode *result = self.head;
     while (index != 0)
     {
@@ -155,6 +158,11 @@ return NO; \
     prevNode.next = node;
     node.next = nextNode;
     ++self.count;
+}
+
+- (id)objectAtIndex:(NSUInteger)index
+{
+    return [self nodeAtIndex:index].object;
 }
 
 @end

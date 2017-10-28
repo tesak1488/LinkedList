@@ -16,5 +16,6 @@
 - (BOOL)insertObjectInHead:(LinkedListNode)object;
 - (BOOL)deleteObject:(LinkedListNode)object;
 - (NSUInteger)findObject:(LinkedListNode)object;
+- (LinkedListNode)objectAtIndex:(NSUInteger)index;
 
 @end
